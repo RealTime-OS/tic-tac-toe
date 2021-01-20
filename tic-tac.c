@@ -53,7 +53,7 @@ int main (void)
 
 		reserved_nums[count] = input;
 
-		for (int i = 0; i < 3; ++i) //assign the symbol to the chosen correspodning input in array 
+		for (int i = 0; i < 3; ++i) //assign the symbol to the chosen corresponding input in array 
 			for (int j =0; j < 3; ++j)
 				if (input == board[i][j])
 					board[i][j] = symbol;
