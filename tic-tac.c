@@ -1,4 +1,10 @@
+#ifdef _WIN32
+#include <conio.h>
+#else
 #include <stdio.h>
+#define clrscr() printf("\e[1;1H\e[2J")
+#endif
+
 #include <stdlib.h>
 
 void print_board (char board[3][3]);
@@ -81,7 +87,7 @@ int main (void)
 
 void print_board(char board[3][3]) //prints the current board when invoked 
 {
-	system("clear"); //clear the screen 
+    clrscr(); //clear the screen 
 	printf("\nplayer 1: X\nPlayer 2: O\n\n");	
 	printf("\n");
 	printf("   %c   |   %c   |   %c   |\n",board[0][0],board[0][1],board[0][2]);
