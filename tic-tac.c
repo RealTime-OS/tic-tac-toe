@@ -8,7 +8,6 @@
 #include <stdlib.h>
 
 void print_board (char board[3][3]);
-void print_board_2 (char board[3][3]);
 int check_won (char board[3][3]);
 
 int main (void)
